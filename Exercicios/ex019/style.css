@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/*
+
+ID são definidas com "#" e só pode um elemento
+Classes são definidas com "." e pode um conjunto de elementos.
+
+*/
+
+body{
+    background-color: #8EF081;
+    font-family: Arial, Helvetica, sans-serif       
+}
+
+h1{
+    color:#42703C;
+}
+
+h1#principal{
+    text-align: center;
+    background-color: #42703C;
+    color: white;
+}
+
+h2{
+    color: #68B05F;
+}
+
+.basico{
+    color: blue;
+}
+
+.intermediario{
+    color: yellow ;
+}
+
+.avancado{
+    color: red;
+}
+
+.destaque{
+    background-color: rgba(255, 255, 0, 0.329);
+}

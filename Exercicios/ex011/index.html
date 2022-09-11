@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esta página em um outro dispositivo, ou diminua e aumente se navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"><!--Esse código diz: Se a tela de exibição for menor que 750px, abra a imagem "foto-p.png"-->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"> <!--Esse código diz: Se a tela de exibição for menor que 1050px, abra a imagem "foto-m.png"-->
+        <img src="imagens/foto-g.png" alt="foto flexivel"> <!--Foto de exibição padrão, com 1000px-->
+    </picture>
+    <!-- Caso esteja havendo erro no código verifique se:
+        . O parametro do source media está com max, ou min. Deve estar com max.
+        . Se a numeração no parametro está com "px"(pixels).
+        . Se o parametro type está escrito corretamente: type="image/png".
+        . Se a ordem das imagens está correta em relaçao a seus tamanhos.
+    -->
+
+    <h1>Inserindo audio</h1>
+    <p>Vamos aprender a adicionar audios em nossos sites usando a tag audio e source src</p>
+    <audio preload="auto" controls> <!-- preload autoplay controls loop muted -->
+        <source src="midia/wppaudio-mp3.mp3" type="audio/mpeg"><!--selecione o arquivo no src e seu tipo na type-->
+        <source src="midia/wppaudio-ogg.ogg" type="audio/ogg"><!--selecione o arquivo no src e seu tipo na type-->]
+        <p>Seu navegador não foi capaz de reproduzir o audio nesta página, ouça-o <a href="midia/wppaudio-mp3.mp3"target="_blank">aqui</a></p><!--Esta mensagem será exibida se nenhum dos audios acima forem suportados pelo navegador-->
+    </audio>
+</body>
+</html>

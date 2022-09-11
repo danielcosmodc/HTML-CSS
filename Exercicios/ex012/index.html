@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ept-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este video está hospedado no meu próprio servidor:</p>
+    <video preload="metadata" width="560" controls poster="imagens/bacudin-560.png">
+        <source src="midia/shoraste-webm.webm" type="video/webm">
+        <source src="midia/shoraste-mp4.mp4" type="video/mp4">
+        <source src="midia/shoraste-ogv.ogv" type="video/ogv">
+        <p>Seu navegador não consegue reproduzir este video, acesse-o <a href="midia/shoraste-mp4.mp4">aqui</a></p>
+    </video>
+
+    <h1>Inserindo um video externo, do Youtube:</h1>
+    <p>Este video está hospedado no servidor do Youtube:</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/TueIR96vmEg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h1>Inserindo um video externo, do Vimeo:</h1>
+    <p>Este video está hospedado no servidor do Vimeo:</p>
+    <iframe src="https://player.vimeo.com/video/536548014?h=d3b4a78f0f&byline=0&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

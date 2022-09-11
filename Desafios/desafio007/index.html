@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Imagens</title>
+</head>
+<body>
+    <h1>Dimensionando imagens</h1>
+    <p>Assim que você dimensionar o tamanho do navegador, as imagens serçao trocadas por uma de tamanho menor.</p>
+    <picture>
+        <source media="(max-width:420px)" srcset="imagens/ciri-400.jpg" type="image/jpg">
+        <source media="(max-width:720px)" srcset="imagens/ciri-700.jpg" type="image/jpg">
+        <source media="(max-width:1050px)" srcset="imagens/ciri-1000.jpg" type="image/jpg">
+        <img src="imagens/ciri-og.jpg" alt="Cirila">
+    </picture>
+</body>
+</html>

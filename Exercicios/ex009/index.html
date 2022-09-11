@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte</h2>
+    <p>O comando System.out.println("Olá mundo"); é um código da linguagem java.</p>
+    <p>O comando <code>System.out.println("Olá mundo");</code> é um código da linguagem java.</p>
+    <!--A tag Code deixa o texto com caracteres monoespaçados, com o mesmo tamanho-->
+    <code>
+            int x = teclado. nextInt();
+            if(x%2==0){
+                System.out.print("numero par");
+            }else{
+                System.out.print("numero impar");
+            }
+    </code>
+    <!--A tag code deixa tudo que está dentro da tag em texto corrido-->
+    <pre>
+        <code>
+    int x = teclado. nextInt();
+    if(x%2==0){
+        System.out.print("numero par");
+    }else{
+        System.out.print("numero impar");
+    }
+        </code>
+    </pre>
+    <!--A tag pre deixa o texto formatado da maneira que ele foi escrito no código, inclusivce com os espaços-->
+    <h2>Citações simples</h2>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q></p>
+    <!--A tag q de citações, simplesmente insere aspas, mas de maneira semantica-->
+    <h2>Citações completas</h2>
+    <p>D.Pedro II antes de morrer disse em seu diário:</p>
+    <blockquote cite="https://www.google.com.br/books/edition/D_Pedro_II/VmupDwAAQBAJ?hl=pt-BR&gbpv=1&dq=d.pedro+ii&printsec=frontcover">Agradeço a deus por ter nascido brasileiro</blockquote>
+    <!--A tag blockquote possui quebra de linha e um deslocamento para o lado direito, nela podemos referenciar a citação, usando o parametro "cite" e colocando dentro dela de onde tiramos a citação-->
+    <h2>Abreviações</h2>
+    <p>Estou estuando <abbr title="Hypertext Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr></p>
+    <!--A tag abbr faz com que quando colocamos o mouse sobre o texto selecionado, ele mostre o signifado da sigla-->
+
+
+</body>
+</html>
