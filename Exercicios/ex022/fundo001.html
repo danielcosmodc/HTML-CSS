@@ -6,27 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fundos</title>
     <style>
-        .quadrado#solido{
-            background-color: darkgrey;
+
+        body{
+            background-image: url(imagens/wallpaper001.jpg);
+        }
+
+        .quadrado{
+            display: inline-block;
             height: 300px;
             width: 300px;
+            border: 2px solid black;
+        }
+
+        .quadrado#solido{
+            background-color: darkgrey;
         }
 
         .quadrado#gradiente{
             background-image: linear-gradient(to bottom, yellow, red);
-            height: 300px;
-            width: 300px;
         }
 
         .quadrado#fundo{
-            background-image: url(pattern001.png);
-            height: 300px;
-            width: 300px;
+            background-image: url(imagens/pattern002.png);
         }
 
     </style>
 </head>
 <body>
+    <h1>DIFERENTES FUNDOS:</h1>
     <div class="quadrado" id="solido"></div>
     <div class="quadrado" id="gradiente"></div>
     <div class="quadrado" id="fundo"></div>
