@@ -11,13 +11,18 @@
             background-color: cornflowerblue;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center center;
-            background-repeat: no-repeat;
             background-size:cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
         }
+
+        /* shorthand background: color > image > position > size > repeat > attachment
+           background: cornflowerblue url('imagens/wallpaper002.jpg') center center/cover no-repeat fixed;
+        */
 
         main{
             background-color: white;
-            width: 500px;
+            max-width: 600px;
             border: 2px solid black;
             text-align: center;
             margin: auto;
